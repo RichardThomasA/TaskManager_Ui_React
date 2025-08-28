@@ -1,8 +1,13 @@
+import Navbar from "@/components/navbar/navbar";
+
 const AdminPage = () => {
     return (
-        <div className="">
-            AdminPage
-        </div>
+        <>
+            <Navbar links={[]} />
+            <div className="">
+                AdminPage
+            </div>
+        </>
     );
 };
 export default AdminPage

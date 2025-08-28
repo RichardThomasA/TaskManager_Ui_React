@@ -1,3 +1,5 @@
+
+
 import { render, screen } from '@testing-library/react';
 import AdminPage from './page';
 
@@ -6,8 +8,13 @@ describe('AdminPage', () => {
     render(<AdminPage />);
   });
 
+  it('renders the Navbar component', () => {
+    render(<AdminPage />);
+    expect(screen.getByRole('navigation')).toBeInTheDocument();
+  });
+
   it('displays the AdminPage text', () => {
     render(<AdminPage />);
-    expect(screen.getByText('AdminPage')).toBeInTheDocument();
+    expect(screen.getByText(/AdminPage/i)).toBeInTheDocument();
   });
 });
