@@ -1,8 +1,11 @@
+import Navbar from "@/components/navbar/navbar";
+
 const Studentpage = () => {
     return (
-        <div className="">
-            Studentpage
-        </div>
+        <>
+            <Navbar links={[]} />
+            <div className="">StudentPage</div>
+        </>
     );
 };
 

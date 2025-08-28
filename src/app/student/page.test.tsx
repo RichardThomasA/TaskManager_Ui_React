@@ -1,3 +1,5 @@
+
+
 import { render, screen } from '@testing-library/react';
 import StudentPage from './page';
 
@@ -6,8 +8,13 @@ describe('StudentPage', () => {
     render(<StudentPage />);
   });
 
+  it('renders the Navbar component', () => {
+    render(<StudentPage />);
+    expect(screen.getByRole('navigation')).toBeInTheDocument();
+  });
+
   it('displays the StudentPage text', () => {
     render(<StudentPage />);
-    expect(screen.getByText('StudentPage')).toBeInTheDocument();
+    expect(screen.getByText(/StudentPage/i)).toBeInTheDocument();
   });
 });

@@ -17,4 +17,11 @@ describe('Homepage', () => {
     render(<Homepage />);
     expect(screen.getByText('Homepage')).toBeInTheDocument();
   });
+  
+  it('shows Admin, Student, and Teacher links in the Navbar', () => {
+    render(<Homepage />);
+    expect(screen.getByText('Admin')).toBeInTheDocument();
+    expect(screen.getByText('Student')).toBeInTheDocument();
+    expect(screen.getByText('Teacher')).toBeInTheDocument();
+  });
 });

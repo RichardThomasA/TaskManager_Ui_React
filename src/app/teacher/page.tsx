@@ -1,8 +1,11 @@
+import Navbar from "@/components/navbar/navbar";
+
 const TeacherPage = () => {
     return (
-        <div className="">
-            TeacherPage
-        </div>
+        <>
+            <Navbar links={[]} />
+            <div className="">TeacherPage</div>
+        </>
     );
 };
 
