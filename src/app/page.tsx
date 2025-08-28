@@ -1,4 +1,5 @@
-import Navbar from './navbar/navbar';
+// Update the import path to the correct location of Navbar
+import Navbar from '../components/navbar/navbar';
 
 const Homepage = () => {
   return (
